@@ -2,7 +2,7 @@
     "name": "factor",
     "displayName": "Factor",
     "description": "Factor programming language",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "dexterhaslem",
     "icon": "Factor_256x256.png",
     "homepage": "https://github.com/DexterHaslem/vscode-factor",
@@ -21,17 +21,27 @@
         "Snippets"
     ],
     "contributes": {
-        "languages": [{
-            "id": "factor",
-            "aliases": ["Factor", "factor"],
-            "extensions": [".factor",".facts"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "factor",
-            "scopeName": "source.factor",
-            "path": "./syntaxes/factor.tmLanguage"
-        }],
+        "languages": [
+            {
+                "id": "factor",
+                "aliases": [
+                    "Factor",
+                    "factor"
+                ],
+                "extensions": [
+                    ".factor",
+                    ".facts"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "factor",
+                "scopeName": "source.factor",
+                "path": "./syntaxes/factor.tmLanguage"
+            }
+        ],
         "snippets": [
             {
                 "language": "factor",
