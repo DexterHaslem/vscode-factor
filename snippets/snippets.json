@@ -1,0 +1,80 @@
+{
+	"bi": {
+		"prefix": "bi",
+		"body": "\n   [ $1 ]\n   [ $2 ] bi",
+		"description": "bi",
+		"scope": "source.factor"
+	},
+	"cleave": {
+		"prefix": "cleave",
+		"body": "{\n   [ $1 ]\n   [ $2 ]\n   [ $3 ]\n   [ $4 ]\n} cleave",
+		"description": "cleave",
+		"scope": "source.factor"
+	},
+	"cond": {
+		"prefix": "cond",
+		"body": "{\n  { [ $1 ] [ $2 ] }\n  { [ $3 ] [ $4 ] }\n$5} cond ",
+		"description": "cond",
+		"scope": "source.factor"
+	},
+	"functor": {
+		"prefix": "functor",
+		"body": "\nFUNCTOR: $1 ( $2 -- $3 )\n$4\nWHERE\n$0\n;FUNCTOR\n",
+		"description": "functor",
+		"scope": "source.factor"
+	},
+	"if": {
+		"prefix": "if",
+		"body": "\n   [ $1 ]\n   [ $2 ] if",
+		"description": "if",
+		"scope": "source.factor"
+	},
+	"::": {
+		"prefix": "::",
+		"body": ":: $1 ( $2 -- $3 ) $0 ;",
+		"description": "::",
+		"scope": "source.factor"
+	},
+	"let": {
+		"prefix": "let",
+		"body": "[let $0 ]",
+		"description": "let",
+		"scope": "source.factor"
+	},
+	"spread": {
+		"prefix": "spread",
+		"body": "{\n   [ $1 ]\n   [ $2 ]\n   [ $3 ]\n   [ $4 ]\n} spread",
+		"description": "spread",
+		"scope": "source.factor"
+	},
+	"tri": {
+		"prefix": "tri",
+		"body": "\n   [ $1 ]\n   [ $2 ]\n   [ $3 ] tri",
+		"description": "tri",
+		"scope": "source.factor"
+	},
+	":": {
+		"prefix": ":",
+		"body": ": $1 ( $2 -- $3 ) $0 ;",
+		"description": ":",
+		"scope": "source.factor"
+	},
+	"“": {
+		"prefix": "“",
+		"body": "[\n   $TM_SELECTED_TEXT$0\n]",
+		"description": "[ expanded",
+		"scope": "source.factor\n"
+	},
+	"[": {
+		"prefix": "[",
+		"body": "[ $TM_SELECTED_TEXT$0 ]",
+		"description": "[",
+		"scope": "source.factor"
+	},
+	"[1": {
+		"prefix": "[",
+		"body": "{ $TM_SELECTED_TEXT$0 }",
+		"description": "{",
+		"scope": "source.factor"
+	}
+}
