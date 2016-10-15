@@ -21,6 +21,16 @@ Here is a list of included snippets
 - [
 - [1
 
+
+## Factor listener integration
+there is a vscode integration available that is not in the latest release
+(0.97 at time of writing). if you are running factor from **sources** / dev builds,
+You can do the following to fire up vscode from your scaffold directly:
+
+	USE: editors.visual-studie-code.factor
+	edit
+
+
 All the hard work was already done thanks to the factor/misc/Factor.tmbundle files,
 This extension was generated from them. Thanks to whoever made that!
 All images and factor material is owned by Factor.
